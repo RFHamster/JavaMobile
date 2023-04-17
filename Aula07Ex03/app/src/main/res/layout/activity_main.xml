@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        >
+        <RadioGroup
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton android:id="@+id/radio_fundamental"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Ensino Fundamental"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_medio"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Ensino Medio"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_superiorIncompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Superior Incompleto"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_superiorCompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Superior Completo"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_especializacaoIncompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Especialização Incompleto"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_especializaçãoCompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Especialização Completo"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_mestradoIncompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Mestrado Incompleto"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_mestradoCompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Mestrado Completo"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_doutoradoIncompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Doutorado Incompleto"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_doutoradoCompleto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Doutorado Completo"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

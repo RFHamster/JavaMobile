@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aula07Ex01</string>
+    <string-array name="fruits_array">
+        <item>Abacate</item>
+        <item>Amora</item>
+        <item>Ameixa</item>
+        <item>Acerola</item>
+        <item>Abacaxi</item>
+        <item>Banana</item>
+        <item>Laranja</item>
+        <item>Limão</item>
+    </string-array>
+</resources>
