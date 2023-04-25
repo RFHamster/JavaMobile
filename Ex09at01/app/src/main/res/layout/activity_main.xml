@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edit_message1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:hint="Numero1"/>
+        <EditText
+            android:id="@+id/edit_message2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:hint="Numero2"/>
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+"
+            android:onClick="mais"/>
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="-"
+            android:onClick="menos"/>
+        <Button
+            android:id="@+id/button03"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="*"
+            android:onClick="multi"/>
+        <Button
+            android:id="@+id/button04"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="/"
+            android:onClick="div"/>
+        <Button
+            android:id="@+id/button06"
+            android:paddingTop="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ler Historico"
+            android:onClick="read"/>
+        <Button
+            android:id="@+id/button07"
+            android:paddingTop="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Deletar Historico"
+            android:onClick="delete"/>
+    </LinearLayout>>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
