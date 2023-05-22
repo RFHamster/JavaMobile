@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CATÁLOGO</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="n_default">0</string>
+    <string name="voltar">VOLTAR</string>
+    <string name="pedir">PEDIR</string>
+</resources>
