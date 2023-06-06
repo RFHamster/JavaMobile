@@ -19,8 +19,7 @@
         android:layout_marginTop="11dp"
         android:layout_toEndOf="@+id/imageView"
         android:text=""
-        android:textColor="@color/text"
-        android:textSize="16sp"
+        android:textSize="13sp"
         android:textStyle="bold" />
 
     <TextView
@@ -32,8 +31,7 @@
         android:layout_marginTop="11dp"
         android:layout_toEndOf="@+id/imageView"
         android:text=""
-        android:textColor="@color/text"
-        android:textSize="14sp" />
+        android:textSize="11sp" />
 
     <TextView
         android:id="@+id/preco"
@@ -44,20 +42,19 @@
         android:layout_marginTop="11dp"
         android:layout_toEndOf="@+id/imageView"
         android:text=""
-        android:textColor="@color/text"
-        android:textSize="14sp" />
+        android:textSize="11sp" />
 
     <Button
         android:id="@+id/btn_mais"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:backgroundTint="@color/greenForest"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="11dp"
         android:text="@string/plus"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="10sp"
         android:focusable="false"
         android:focusableInTouchMode="false"/>
 
@@ -71,32 +68,30 @@
         android:layout_marginEnd="7dp"
         android:layout_toStartOf="@+id/btn_mais"
         android:gravity="center"
-        android:textColor="@color/text"
         android:text="@string/n_default"
-        android:textSize="26sp" />
+        android:textSize="13sp" />
 
     <Button
         android:id="@+id/btn_menos"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:textStyle="bold"
         android:layout_centerVertical="true"
         android:layout_marginEnd="7dp"
         android:layout_toStartOf="@+id/qtd"
         android:text="@string/minus"
-        android:textSize="30sp"
+        android:textSize="10sp"
         android:focusable="false"
         android:focusableInTouchMode="false"/>
 
     <ImageView
         android:id="@+id/imageView"
+        android:layout_alignParentStart="true"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="6dp"
-        android:contentDescription="Icon"
         android:contextClickable="false"
-        tools:src="" />
+        tools:src="@mipmap/ic_launcher_round" />
 </RelativeLayout>

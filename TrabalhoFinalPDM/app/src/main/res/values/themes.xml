@@ -3,7 +3,12 @@
     <style name="Base.Theme.TrabalhoFinalPDM" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">#4686AA</item>
+        <item name= "colorPrimary">#80DFDF</item>
+        <item name= "colorPrimaryDark">#00BFBF</item>
+        <item name= "colorAccent">#F9A825</item>
+
     </style>
 
-    <style name="Theme.TrabalhoFinalPDM" parent="Base.Theme.TrabalhoFinalPDM" />
+    <style name="Theme.TrabalhoFinalPDM" parent="Base.Theme.TrabalhoFinalPDM"/>
 </resources>

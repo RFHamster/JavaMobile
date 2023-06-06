@@ -1,5 +1,4 @@
-package com.example.trabalhofinalpdm;
-
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +7,6 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void verificar(View view)
     {
-        Intent intent = new Intent(this,TelaPedidos.class);
+        Intent intent = new Intent(this,MainActivity2.class);
         intent.putExtra(EXTRA_MESSAGE,logado);
         finish();
-        Toast toast = Toast.makeText(this, logado, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, logado, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
         startActivity(intent);

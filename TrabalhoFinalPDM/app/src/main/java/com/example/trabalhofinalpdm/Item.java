@@ -6,11 +6,11 @@ public class Item {
     private String preco;
     private String caminhoImg;
 
-    public Item(String nome, String descricao, String preco) {
+    public Item(String nome, String preco, String descricao, String caminhoImg) {
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
-        this.caminhoImg = "...";
+        this.caminhoImg = caminhoImg;
     }
 
     public String getNome() {

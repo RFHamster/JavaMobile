@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#E32636</color>
     <color name="greenForest">#228b22</color>
+    <color name="text">#FFFFFFFF</color>
+    <color name="azul_bebe">#0280C7</color>
 </resources>

@@ -15,14 +15,18 @@ import java.util.List;
 public class ItemAdapter extends ArrayAdapter<Item> {
 
     private Context mContext;
-    private List<Item> pessoasList;
+    private ArrayList<Item> ItemList;
+    public ArrayList<String> valores;
 
-    public PessoasAdapter(Context context, ArrayList<Item> list) {
+    public ItemAdapter(Context context, ArrayList<Item> list) {
         super(context, 0 , list);
         mContext = context;
-        pessoasList = list;
+        ItemList = list;
+        valores = new ArrayList<String>();
+        for(int i = 0; i < list.size();i++){
+            valores.add("0");
+        }
     }
-
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -30,34 +34,50 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         View listItem = convertView;
 
         if(listItem == null)
-            listItem = LayoutInflater.from(mContext).inflate(R.layout.pessoa_list,parent,false);
+            listItem = LayoutInflater.from(mContext).inflate(R.layout.list_row,parent,false);
 
-        Item currentPessoa = pessoasList.get(position);
+        Item currentItem = ItemList.get(position);
 
-        TextView nome = listItem.findViewById(R.id.textViewNome);
-        nome.setText(currentPessoa.getNome());
+        TextView nome = listItem.findViewById(R.id.nome);
+        nome.setText(currentItem.getNome());
 
-        TextView telefone = listItem.findViewById(R.id.textViewTelefone);
+        TextView descricao = listItem.findViewById(R.id.descricao);
 
-        telefone.setText(currentPessoa.getTelefone());
+        descricao.setText(currentItem.getDescricao());
 
-        TextView endereco = listItem.findViewById(R.id.textViewEndereco);
+        TextView preco = listItem.findViewById(R.id.preco);
 
-        endereco.setText(currentPessoa.getEndereco());
+        preco.setText(currentItem.getPreco());
 
-        Button imprimeNome = (Button) listItem.findViewById(R.id.button01);
-        imprimeNome.setOnClickListener(new View.OnClickListener() {
+        Button buttonMais = (Button) listItem.findViewById(R.id.btn_mais);
+        Button buttonMenos = (Button) listItem.findViewById(R.id.btn_menos);
+
+        TextView quantidade = (TextView) listItem.findViewById(R.id.qtd);
+        buttonMais.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                int x = Integer.parseInt(quantidade.getText().toString());
+                x++;
+                quantidade.setText(String.valueOf(x));
+                valores.set(position, quantidade.getText().toString());
+            }
+        });
 
-                CharSequence text = currentPessoa.getNome();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(getContext(), text, duration);
-                toast.show();
+        buttonMenos.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                int x = Integer.parseInt(quantidade.getText().toString());
+                if(x != 0) {
+                    x--;
+                    valores.set(position, quantidade.getText().toString());
+                    quantidade.setText(String.valueOf(x));
+                }
             }
         });
 
         return listItem;
+    }
+
+    public ArrayList<String> getValores(){
+        return this.valores;
     }
 
 

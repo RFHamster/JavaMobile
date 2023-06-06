@@ -4,5 +4,8 @@
     <string name="minus">-</string>
     <string name="n_default">0</string>
     <string name="voltar">VOLTAR</string>
-    <string name="pedir">PEDIR</string>
+    <string name="pedir">PEDIR CONTA</string>
+    <string name="salvar">SALVAR</string>
+    <string name="addItem">ADICIONAR PEDIDO</string>
+    <string name="deslogar">DESLOGAR</string>
 </resources>

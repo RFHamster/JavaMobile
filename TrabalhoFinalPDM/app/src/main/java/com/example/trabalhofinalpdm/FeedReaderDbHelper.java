@@ -3,9 +3,11 @@ package com.example.trabalhofinalpdm;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class FeedReaderDbHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "TRestaurante.db";
+    //TRestaurante
+    public static final String DATABASE_NAME = "RestauranteGRW.db";
     public static final int DATABASE_VERSION = 1;
 
     public FeedReaderDbHelper(Context context){
