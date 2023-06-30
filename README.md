@@ -41,3 +41,5 @@ plataformas, segurança, publicação.
 11. Projeto e desenvolvimento de um sistema/aplicação para dispositivos móveis utilizando plataformas atuais.
 
 Logo, os exercícios cobrem todos estes conteúdos
+
+Link do Plano de Ensino: https://facom.ufu.br/system/files/conteudo/facom33402_programacaodispositivosmoveis.pdf
